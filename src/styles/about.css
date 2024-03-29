@@ -149,9 +149,10 @@
 .about-skilldetails-table {
   margin: auto;
   width: 90%;
-  border: 5px solid #333;
+  border: 3px solid #333;
+  border-radius: 10px;
   border-spacing: 0;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
     .about-skilldetails-table tr {
@@ -162,7 +163,7 @@
 
         .about-skilldetails-table thead tr {
             font-size: 2rem;
-            background-color: rgba(51, 51, 51, 0.2);
+            background-color: rgba(0, 0, 0, 0.2);
             color: #333;
         }
 
@@ -177,7 +178,7 @@
       padding: 10px;
       border: 1px solid #333;
       text-align: center;
-      background-color: rgba(51, 51, 51, 0.2);
+      font-weight: bold;
     }
 
       .about-skilldetails-table td a {
@@ -190,7 +191,7 @@
     }
 
   .about-skilldetails-selected {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
   }
 
     .about-skilldetails-selected td a {

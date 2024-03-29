@@ -1,12 +1,7 @@
 import { Link } from 'react-router-dom'
+import toTop from '../utilities/toTop'
 
 export default function Home() {
-  
-  //Moves the user to near the top of the page when clicking the "Learn More" buttons
-  function focus() {
-    document.documentElement.scrollTop = 0;
-    document.body.scrollTop = 0;
-  }
   
   return (
     <div className='home'>   
@@ -32,7 +27,7 @@ export default function Home() {
             title='About Page'>
               <Link
                 className='button-linktext'
-                onClick={focus}
+                onClick={toTop}
                 to='/about/'>
                   Learn More
               </Link>
@@ -50,7 +45,7 @@ export default function Home() {
             title='Portfolio Page'>
               <Link
                 className='button-linktext'
-                onClick={focus}
+                onClick={toTop}
                 to='/portfolio'>
                   Learn More
               </Link>
@@ -67,7 +62,7 @@ export default function Home() {
             title='Contact Page'>
               <Link
                 className='button-linktext'
-                onClick={focus}
+                onClick={toTop}
                 to='/contact'>
                   Learn More
               </Link>
