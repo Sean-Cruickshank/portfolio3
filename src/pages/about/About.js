@@ -1,4 +1,6 @@
 import portrait from '../../images/portrait.png'
+import { Link } from 'react-router-dom'
+import toTop from '../../utilities/toTop'
 
 export default function About() {
   return (
@@ -24,6 +26,17 @@ export default function About() {
 
         <p>I am mostly focused on working with JavaScript and React at the moment, but would like to pick up as many new skills as I can. Somewhere I can use what I know, alongside something new would be a great challenge for me!</p>
         <p>My ideal job at the moment would be somewhere I can grow my skills while I become familiar with the day to day activities of a web developer.</p>
+        <p>If you think I could make a good addition to your team, feel free to reach out!</p>
+        <div
+            className='button-learnmore'
+            title='Contact Page'>
+              <Link
+                className='button-linktext'
+                onClick={toTop}
+                to='/contact'>
+                  Learn More
+              </Link>
+          </div>
       </div>
 
       <div className='about-index-section'>
