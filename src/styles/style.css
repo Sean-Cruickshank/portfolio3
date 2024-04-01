@@ -126,6 +126,7 @@ nav a {
   text-decoration: none;
   font-size: 2rem;
   font-weight: bold;
+  border: solid 5px rgba(0, 0, 0, 0);
 }
 
 nav a:hover {
