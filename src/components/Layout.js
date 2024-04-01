@@ -6,13 +6,6 @@ import Footer from './Footer';
 
 export default function Layout() {
   
-  const submessage = [
-    "Under Construction!",
-    "Operating at partial capacity since 2024!"
-  ]
-
-  const submessageSelector = Math.floor(Math.random() * submessage.length);
-
   const [aboutLink, setAboutLink] = React.useState()
   const location = useLocation();
   const splitter = location.pathname.split("/");

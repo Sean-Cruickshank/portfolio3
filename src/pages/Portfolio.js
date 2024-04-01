@@ -76,7 +76,7 @@ export default function Portfolio() {
     })
     const formattedList = list.substring(1)
     return (
-      <div key={item.id} className="portfolio-card">
+      <div key={item.id} className="portfolio-card" title={item.title}>
         <Link
           to={item.id}
           state={{search: `?${searchParams.toString()}`}}
@@ -85,10 +85,13 @@ export default function Portfolio() {
           <div className="portfolio-card-title">
             <h1>{item.title}</h1>
           </div>
-          <h2>{item.year}</h2>
+          <h2>{item.yearShort}</h2>
           <div className="portfolio-card-body">
             <p>{item.description}</p>
-            <img className="portfolio-card-thumbnail" src={item.thumbnail} />
+            <img
+              className="portfolio-card-thumbnail"
+              src={item.thumbnail}
+              />
           </div>
           
           <h3>Tags: {formattedList}</h3>
@@ -113,8 +116,12 @@ export default function Portfolio() {
   
   return (
     <div className="container portfolio">
-      <h1>My Portfolio</h1>
-      <p>This blurb will probably need to be long or it will look weird I wonder if this is long enough yet</p>
+      
+      <div className="portfolio-intro">
+        <h1>My Projects</h1>
+        <p>An overview of some of the personal projects I have completed during my time in web development. I hope to expand this list as much as possible over the next few years, as I continue to grow and learn new skills!</p>
+      </div>
+      
       <div className="portfolio-body">
         <div className="portfolio-filters">
           <h2>Filters</h2>

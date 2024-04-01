@@ -9,7 +9,12 @@ export default function About() {
       <h1>Who Am I?</h1>
       
       <div>
-        <img className='about-index-image' src={portrait} />
+        <img
+          className='about-index-image'
+          src={portrait}
+          alt='A picture of me'
+          title='A picture of me'
+          />
       </div>
       <div className="about-index-section about-index-intro">
           

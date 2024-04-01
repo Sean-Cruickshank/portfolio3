@@ -191,15 +191,15 @@
     }
 
   .about-skilldetails-selected {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.1);
   }
 
     .about-skilldetails-selected td a {
-      color: white;
+      color: darkcyan;
     }  
   
     .about-skilldetails-selected th {
-      color: white;
+      color: darkcyan;
     }
 
 /* --------------------------------------------- */

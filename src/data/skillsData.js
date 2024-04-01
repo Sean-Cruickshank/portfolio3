@@ -37,7 +37,7 @@ export const skillsData = [
     title: "Vue.js",
     description: [
       <p>I spent some time learning Vue in the final year of my degree. It was the first JavaScript library I worked with!</p>,
-      <p>I haven't used it much since then, but I thought it was a lot of fun to work with and would like to spend more time with it in the future</p>
+      <p>I haven't used it much since then, but I thought it was a lot of fun, and would like to spend more time with it in the future.</p>
     ]
   },
   {
@@ -46,7 +46,8 @@ export const skillsData = [
     title: "WordPress",
     description: [
       <p>The first live website I worked on was for a charity in Invercargill and was entirely built in Wordpress as part of the second year of my Bachelor's degree.</p>,
-      <p>I worked on the front and backend design of the website, which included working with plugins and themes.</p>
+      <p>I worked on the front and backend design of the website, which included working with plugins and themes.</p>,
+      <p>While I haven't used it much since then, I would like to become more familiar with building websites through Wordpress, and coding with PHP in general.</p>
     ]
   },
   {
@@ -55,6 +56,7 @@ export const skillsData = [
     title: "C#",
     description: [
       <p>C# was the main programming language used during my degree. While I haven't used it as much since then I have the general knowledge to get most things done.</p>,
+      <h2>ASP .NET Core</h2>,
       <p>A lot of my degree projects were focused on ASP.NET Core, and involved using C# for handling the Model-View-Controller and data fetching.</p>
     ]
   },
@@ -63,7 +65,7 @@ export const skillsData = [
     url: "java",
     title: "Java",
     description: [
-      <p>I spent some time learning Java in the first year of my degree, and used it in Android Studio to create mobile apps</p>,
+      <p>I spent some time learning Java in the first year of my degree, and used it in Android Studio to create mobile apps.</p>,
       <p>I am familiar with the basics, but haven't used it as much lately.</p>
     ]
   },
@@ -74,6 +76,8 @@ export const skillsData = [
     description: [
       <h2>- SQL -</h2>,
       <p>Most of the work in databases I have done has been with SQL.</p>,
+      <p>I am familiar with the syntax, but most of my work has been on the front-end, or with local data files (like this website!)</p>,
+      <p>I definitely feel I have room to improve with SQL and database design in general!</p>,
       <h2>- Jade -</h2>,
       <p>I spent a semester using Jade during the second year of my degree. While I don't see many picking it over SQL, I enjoyed using it and am familiar with how it works</p>
     ]
@@ -89,6 +93,6 @@ export const tableData = [
   {name: "WordPress", score: 3, tag: "wordpress"},
   {name: "C#", score: 3, tag: "c-sharp"},
   {name: "Java", score: 2, tag: "java"},
-  {name: "SQL", score: 3, tag: "database-management"},
+  {name: "SQL", score: 2, tag: "database-management"},
   {name: "Jade", score: 2, tag: "database-management"},
 ]
