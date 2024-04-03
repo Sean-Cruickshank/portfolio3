@@ -79,7 +79,9 @@ export default function PortfolioDetails() {
               title={pageData.imageTitles[position]}
             />
           </div>
+          <p><i>{pageData.imageTitles[position]}</i></p>
         </div>
+        
         }
 
         { downloadsList.length > 0 &&

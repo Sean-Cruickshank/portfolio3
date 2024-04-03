@@ -38,7 +38,7 @@ export default function Home() {
           <h1>My portfolio</h1>
           <p>I am currently building out a series of projects to showcase my abilities and learn new skills</p>
           <p>These projects are available to view here!</p>
-          <p>This includes screenshots and some documentation, as well as downloads to all my projects</p>
+          <p>This includes screenshots as well as downloads to all my projects</p>
 
           <div
             className='button-learnmore'

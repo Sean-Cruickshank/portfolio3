@@ -223,7 +223,7 @@
 
 .gallery-body {
   position: relative;
-  width: 70%;
+  width: 50%;
   margin: auto;
 }
 
@@ -382,7 +382,7 @@
     }
 
   .gallery-body {
-    width: 75%;
+    width: 60%;
   }
   
     .gallery-body button {
@@ -470,7 +470,7 @@
     }
 
   .gallery-body {
-    width: 80%;
+    width: 70%;
   }
   
     .gallery-body button {
@@ -573,7 +573,7 @@
     }
 
   .gallery-body {
-    width: 85%;
+    width: 80%;
   }
   
     .gallery-body button {
