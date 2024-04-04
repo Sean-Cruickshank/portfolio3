@@ -119,7 +119,7 @@ export default function Portfolio() {
       
       <div className="portfolio-intro">
         <h1>My Projects</h1>
-        <p>An overview of some of the personal projects I have completed during my time in web development. I hope to expand this list as much as possible over the next few years, as I continue to grow and learn new skills!</p>
+        <p>An overview of some of the personal projects I have completed during my time in web development. I plan on adding new projects here regularly, as I continue to grow and learn new skills!</p>
       </div>
       
       <div className="portfolio-body">

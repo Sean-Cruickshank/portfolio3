@@ -47,7 +47,7 @@ export default function HardSkills() {
       <div className='about-skills-softskills'>
         <h1>Personal Skills</h1>
         <p>I enjoy working in a team and have been told I do a good job of communicating my ideas with others.</p>
-        <p>I love to learn new things, and am always pushing myself to improve and learn from others.</p>
+        <p>I love to learn new things, and am always pushing myself to improve and learn.</p>
         <p>During the final year project for my degree I took on a lot of the leadership roles for my team. I actually ended up being team leader for the second half of the project!</p>
         <p>I consider myself very punctual and take pride in showing up on time.</p>
       </div>

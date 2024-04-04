@@ -223,11 +223,13 @@ footer p {
 }
 
 .notfound-subtitle {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   border: none;
 }
 
 .notfound-text {
+  width: 70%;
+  margin: auto;
   margin-bottom: 40px;
 }
 

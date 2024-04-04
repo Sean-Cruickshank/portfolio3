@@ -93,6 +93,6 @@ export const tableData = [
   {name: "WordPress", score: 3, tag: "wordpress"},
   {name: "C#", score: 3, tag: "c-sharp"},
   {name: "Java", score: 2, tag: "java"},
-  {name: "SQL", score: 2, tag: "database-management"},
+  {name: "SQL", score: 3, tag: "database-management"},
   {name: "Jade", score: 2, tag: "database-management"},
 ]

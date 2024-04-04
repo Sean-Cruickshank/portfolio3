@@ -329,6 +329,10 @@
     margin-bottom: 20px;
   }
 
+  .portfolio-details-notfound p {
+    margin-bottom: 10px;
+  }
+
 /* --------------------------------------------- */
 
 /* @media screen size - Extra Large+ */
@@ -509,7 +513,6 @@
     .portfolio-details-table td {
     padding: 8px;
     }
-
 }
 
 /* @media screen size - Small */

@@ -26,7 +26,7 @@ export const portfolioData = [
     projectFilesize: "5.9 MB",
     projectDescription: "Visual Studio project file",
     pageText: [
-      <p key={nanoid()}>My main goal with making this website was to improve my knowledge of JavaScript. Primarily, it was to generate as much of the HTML on the website as possible, by reusing code.</p>,
+      <p key={nanoid()}>My main goal with making this website was to improve my knowledge of JavaScript. Primarily, it was to generate as much of the HTML on the website as possible by reusing code.</p>,
       <p key={nanoid()}>The website consists of four themed pages, where each page runs through a list of space objects ordered by that theme (size, distance, temperature, and speed). Information about each object is stored in a JavaScript array, where it is fed through a for loop to generate the content for the page.</p>,
       <p key={nanoid()}>This website was also a good oppourtunity for me to learn more about content attribution and licencing. The website features an attributions page, where sources for all the images and facts used on the website can be found. All images were sourced through either public domain, or creative commons.</p>
     ],

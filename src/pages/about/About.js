@@ -17,6 +17,10 @@ export default function About() {
           />
       </div>
       <div className="about-index-section about-index-intro">
+        <div className='button-learnmore'>
+          <a className='button-linktext' href="https://d2ep14lbls2qwm.cloudfront.net/downloads/SeanCV.docx">Download My CV</a>
+        </div>
+        
           
           <p>My name is Sean Cruickshank and I am a graduate web developer based in Auckland, New Zealand.</p>
 

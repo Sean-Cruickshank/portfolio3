@@ -22,9 +22,10 @@ export default function PortfolioDetails() {
 
   if (!pageData) {
     return (
-      <div>
+      <div className='portfolio-details-notfound'>
         <h1>Page not found</h1>
-        <Link onClick={toTop} to={`/portfolio${returnSearchParam}`}><FaArrowLeft /> Back to My Projects</Link>
+        <p className='test'>Sorry, the Project ID you entered does not exist</p>
+        <Link className='notfound-link' to='/portfolio'>Return to My Projects</Link>
       </div>
       
     )
@@ -79,7 +80,7 @@ export default function PortfolioDetails() {
               title={pageData.imageTitles[position]}
             />
           </div>
-          <p><i>{pageData.imageTitles[position]}</i></p>
+          <p><i>{pageData.imageTitles[position]}</i>`</p>
         </div>
         
         }
