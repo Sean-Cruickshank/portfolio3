@@ -304,7 +304,7 @@
       background-color: rgba(0, 0, 0, 0.2);
       color: #333;
       font-weight: bold;
-      font-family: 'Agency FB';
+      font-family: Agency FB, Agency FB Thin, sans-serif;
   }
 
   .portfolio-details-table tbody th {

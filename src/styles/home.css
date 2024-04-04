@@ -6,14 +6,14 @@
 
 .home-title {
   font-size: 9rem;
-  font-family: Agency FB;
+  font-family: Agency FB, Agency FB Thin, sans-serif;
   line-height: 80%;
   padding: 0;
   border-bottom: none;
 }
 
 .home-subtitle {
-  font-family: Agency FB;
+  font-family: Agency FB, Agency FB Thin, sans-serif;
   font-size: 4rem !important;
   opacity: 0.6;
   border: none;
