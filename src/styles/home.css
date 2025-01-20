@@ -1,0 +1,86 @@
+/* --- Home Page --- */
+
+.home {
+  margin-top: 0;
+}
+
+.home-title {
+  font-size: 9rem;
+  font-family: Agency FB, Agency FB Thin, sans-serif;
+  line-height: 80%;
+  padding: 0;
+  border-bottom: none;
+}
+
+.home-subtitle {
+  font-family: Agency FB, Agency FB Thin, sans-serif;
+  font-size: 4rem !important;
+  opacity: 0.6;
+  border: none;
+  margin-bottom: 100px;
+}
+
+.home-section {
+  margin-bottom: 80px;
+}
+
+.home-section p {
+  margin-bottom: 10px;
+}
+
+/* --------------------------------------------- */
+
+/* @media screen size - Extra Large+ */
+@media only screen and (min-width: 1120px) {
+
+}
+
+/* @media screen size - Large */
+@media only screen and (min-width: 992px) and (max-width: 1199.999px) {
+  
+  .home-title {
+    font-size: 7.5rem !important;
+  }
+  
+  .home-subtitle {
+    font-size: 3rem !important;
+  }
+}
+
+/* @media screen size - Medium */
+@media only screen and (min-width: 768px) and (max-width: 991.999px) {
+  
+  .home-title {
+    font-size: 6rem !important;
+  }
+  
+  .home-subtitle {
+    font-size: 2.5rem !important;
+  }
+}
+
+/* @media screen size - Small */
+@media only screen and (min-width: 576px) and (max-width: 767.999px) {
+  
+  .home-title {
+    font-size: 4.5rem !important;
+  }
+  
+  .home-subtitle {
+    font-size: 2rem !important;
+  }
+
+}
+
+/* @media screen size - Extra Small */
+@media only screen and (max-width: 575.999px) {
+  
+  .home-title {
+    font-size: 3rem !important;
+  }
+  
+  .home-subtitle {
+    font-size: 1.5rem !important;
+  }
+
+}

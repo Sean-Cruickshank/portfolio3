@@ -1,0 +1,372 @@
+/* --- About Layout Page --- */
+
+.about-layout-nav {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+.about-layout-nav a {
+  margin: auto;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.about-layout-nav a:hover {
+  opacity: 0.7;
+}
+
+/* --- Who Am I? Page --- */
+
+.about-index p {
+  margin-bottom: 20px;
+}
+
+.about-index-image {
+  width: 30%;
+  border: 3px solid #333;
+  border-radius: 10px;
+  margin: 40px 0 40px 0;
+}
+
+.about-index-section {
+  margin: 0 auto 80px auto;
+  
+}
+
+.about-index-section h1 {
+  margin-top: 0;
+}
+
+.about-index-intro div {
+  margin-top: 0px !important;
+  margin-bottom: 40px;
+}
+
+/* --- Experience Page --- */
+
+.about-experience-card {
+  margin: 40px 20px 40px 20px;
+}
+
+.about-experience-card h2 {
+  color: darkcyan;
+  font-family: Agency FB, Agency FB Thin, sans-serif;
+  border: none;
+  margin: 0 auto 0 auto;
+}
+
+/* --- Skills Page --- */
+
+.about-skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  justify-items: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.about-skills-intro {
+  margin: 40px 0 40px 0;
+}
+
+.about-skills-card {
+  background-color: darkcyan;
+  width: 80%;
+  padding: 3px;
+  margin-bottom: 20px;
+  align-items: center;
+  border: solid 2px white;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.7);
+}
+
+.about-skills-card:hover {
+  box-shadow: inset 0px 5px 5px -2px rgba(0, 0, 0, 0.7);
+  opacity: 0.9;
+}
+
+.about-skills-card a {
+  width: 100%;
+  height: 80px;
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.about-skills-list {
+  margin: 20px auto 0 auto;
+}
+
+.about-skills-list p {
+  font-size: 1.5rem;
+  line-height: 200%;
+}
+
+.about-skills-softskills {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.about-skills-softskills p {
+  margin-bottom: 10px;
+}
+
+.about-skilldetails {
+  text-align: left;
+}
+
+.about-skilldetails a {
+  color: #333;
+  text-decoration: none;
+}
+
+.about-skilldetails a:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+.about-skilldetails-container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-skilldetails-container h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about-skilldetails-container h2 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.about-skilldetails-container p {
+  margin-bottom: 20px;
+}
+
+.about-skilldetails-chart {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-skilldetails-table {
+  margin: auto;
+  width: 90%;
+  border: 3px solid #333;
+  border-radius: 10px;
+  border-spacing: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+    .about-skilldetails-table tr {
+        font-family: Agency FB, Agency FB Thin, sans-serif;
+        font-size: 1.5rem;
+        border: 1px solid #333;
+    }
+
+        .about-skilldetails-table thead tr {
+            font-size: 2rem;
+            background-color: rgba(0, 0, 0, 0.2);
+            color: #333;
+        }
+
+    .about-skilldetails-table th {
+        padding: 10px;
+        border: 1px solid #333;
+        width: 12%;
+        text-align: center;
+    }
+
+    .about-skilldetails-table td {
+      padding: 10px;
+      border: 1px solid #333;
+      text-align: center;
+      font-weight: bold;
+    }
+
+      .about-skilldetails-table td a {
+        color: #333;
+        font-size: 1.5rem;
+      }
+
+    .about-skilldetails-table tr {
+      color: #333;
+    }
+
+  .about-skilldetails-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+    .about-skilldetails-selected td a {
+      color: darkcyan;
+    }  
+  
+    .about-skilldetails-selected th {
+      color: darkcyan;
+    }
+
+/* --------------------------------------------- */
+
+/* @media screen size - Extra Large+ */
+@media only screen and (min-width: 1120px) {
+
+}
+
+/* @media screen size - Large */
+@media only screen and (min-width: 992px) and (max-width: 1199.999px) {
+  
+  .about-layout-nav {
+    width: 65%;
+  }
+
+  .about-layout-nav a {
+    font-size: 1.4rem;
+  }
+
+  .about-skills-card a {
+    font-size: 1.1rem;
+  }
+
+  .about-skills-list p {
+    font-size: 1.35rem;
+  }
+
+  .about-skilldetails-table thead tr {
+    font-size: 1.8rem;
+  }
+
+  .about-skilldetails-table td a {
+    font-size: 1.75rem;
+  }
+
+  .about-skilldetails-table tr {
+    font-size: 1.75rem;
+  }
+
+}
+
+/* @media screen size - Medium */
+@media only screen and (min-width: 768px) and (max-width: 991.999px) {
+
+  .about-layout-nav {
+    width: 80%;
+  }
+  
+  .about-layout-nav a {
+    font-size: 1.25rem;
+  }
+
+  .about-skills-card a {
+    font-size: 1rem;
+  }
+
+  .about-skills-list p {
+    font-size: 1.125rem;
+  }
+
+  .about-skilldetails-table thead tr {
+    font-size: 1.6rem;
+  }
+
+  .about-skilldetails-table td a {
+    font-size: 1.5rem;
+  }
+
+  .about-skilldetails-table tr {
+    font-size: 1.5rem;
+  }
+
+}
+
+/* @media screen size - Small */
+@media only screen and (min-width: 576px) and (max-width: 767.999px) {
+  
+  .about-layout-nav {
+    width: 90%;
+  }
+
+  .about-layout-nav a {
+    font-size: 1rem;
+  }
+
+  .about-index-image {
+    width: 40%;
+  }
+
+  .about-skills-card a {
+    height: 70px;
+    font-size: 0.9rem;
+  }
+
+  .about-skills-list p {
+    font-size: 0.975rem;
+  }
+
+  .about-skilldetails-table {
+    width: 100%;
+  }
+
+  .about-skilldetails-table thead tr {
+    font-size: 1.4rem;
+  }
+
+  .about-skilldetails-table td a {
+    font-size: 1.25rem;
+  }
+
+  .about-skilldetails-table tr {
+    font-size: 1.25rem;
+  }
+}
+
+/* @media screen size - Extra Small */
+@media only screen and (max-width: 575.999px) {
+  
+  .about-layout-nav {
+    width: 100%;
+  }
+
+  .about-layout-nav a {
+    font-size: 0.8rem;
+  }
+
+  .about-index-image {
+    width: 50%;
+  }
+
+  .about-skills-container {
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .about-skills-card a {
+    height: 60px;
+    font-size: .8rem;
+  }
+
+  .about-skills-list p {
+    font-size: 0.85rem;
+  }
+
+  .about-skilldetails-table {
+    width: 100%;
+  }
+
+  .about-skilldetails-table thead tr {
+    font-size: 1.2rem;
+  }
+
+  .about-skilldetails-table td a {
+    font-size: 1rem;
+  }
+
+  .about-skilldetails-table tr {
+    font-size: 1rem;
+  }
+
+}
