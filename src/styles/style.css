@@ -21,12 +21,12 @@ html {
 }
 
 p {
-  font-size: 2rem;
+  font-size: clamp(1rem, -0.0588rem + 2.9412vw, 2rem);
   line-height: 150%;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: clamp(2.4rem, 0.7059rem + 4.7059vw, 4rem);
   font-family: Agency FB, Agency FB Thin, sans-serif;
   text-transform: uppercase;
   margin: auto auto 20px auto;
@@ -37,7 +37,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: clamp(1.2rem, -0.7059rem + 5.2941vw, 3rem);
   font-family: Agency FB, Agency FB Thin, sans-serif;
   margin: auto auto 10px auto;
   border-bottom: 2px solid darkcyan;
@@ -45,7 +45,7 @@ h2 {
 }
 
 a {
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 0.5882rem + 0.5882vw, 1rem);
 }
 
 .button-learnmore {
@@ -69,7 +69,7 @@ a {
 
 .button-linktext {
   text-decoration: none;
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 0.3765rem + 1.1765vw, 1.2rem);
   color: white;
   width: 240px;
   height: 60px;
@@ -103,7 +103,7 @@ a {
 
 .layout-social-icon {
   color: #febd71;
-  font-size: 2rem;
+  font-size: clamp(1.4rem, 0.7647rem + 1.7647vw, 2rem);
   margin: auto;
   padding-left: 24px;
   padding-right: 24px;
@@ -129,7 +129,7 @@ nav a {
   padding: 6px;
   color: #333;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: clamp(1.2rem, 0.3529rem + 2.3529vw, 2rem);
   font-weight: bold;
   border: solid 5px rgba(0, 0, 0, 0);
 }
@@ -153,9 +153,12 @@ footer {
 }
 
 footer p {
-  font-size: 1rem;
   margin-bottom: 20px;
 }
+
+  footer p, .footer-nav-link {
+    font-size: clamp(0.7rem, 0.3824rem + 0.8824vw, 1rem);
+  }
 
 .footer-nav {
   margin: 30px auto;
@@ -168,7 +171,6 @@ footer p {
 }
 
 .footer-nav-link {
-  font-size: 1rem;
   color: #febd71;
   text-decoration: none;
   padding: 10px;
@@ -180,6 +182,7 @@ footer p {
 
 .footer-totop {
   color: #febd71;
+  font-size: clamp(0.8rem, 0.3765rem + 1.1765vw, 1.2rem);
   padding: 3px;
   border: solid 1px #febd71;
 }
@@ -206,13 +209,13 @@ footer p {
 }
 
 .contact-logo {
-  font-size: 3rem;
+  font-size: clamp(2rem, 0.9412rem + 2.9412vw, 3rem);
 }
 
 .contact-detail {
   color: #333;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: clamp(0.8rem, 0.0588rem + 2.0588vw, 1.5rem);
 }
 
 .contact-detail:hover {
@@ -243,7 +246,7 @@ footer p {
 }
 
 .notfound-link {
-  font-size: 1.4rem;
+  font-size: clamp(1rem, 0.5765rem + 1.1765vw, 1.4rem);
   color: darkcyan;
   text-decoration: none;
   font-weight: bold;
@@ -268,22 +271,6 @@ footer p {
     width: 70%;
   }
 
-  p {
-    font-size: 1.8rem;
-  }
-
-  h1 {
-    font-size: 3.4rem;
-  }
-
-  h2 {
-    font-size: 2.55rem;
-  }
-
-  a {
-    font-size: 0.95rem;
-  }
-
   .button-learnmore {
     width: 240px;
     height: 60px;
@@ -292,21 +279,6 @@ footer p {
   .button-linktext {
     width: 240px;
     height: 60px;
-  }
-
-  .layout-banner h1 {
-    font-size: 8rem;
-    margin-top: 60px;
-  }
-
-  .layout-banner h2 {
-    font-size: 1.75rem;
-    margin-bottom: 120px;
-  }
-
-  .layout-banner h2 {
-    font-size: 1.25rem;
-    margin-bottom: 80px;
   }
 
   .layout-social {
@@ -318,41 +290,12 @@ footer p {
   }
 
   .layout-social-icon {
-    font-size: 2rem;
     padding-left: 18px;
     padding-right: 18px;
   }
 
-  nav a {
-    font-size: 1.8rem;
-  }
-
-  footer p {
-    font-size: 0.9rem;
-  }
-
   .footer-nav {
     width: 70%;
-  }
-  
-  .footer-nav-link {
-    font-size: 0.9rem;
-  }
-
-  .footer-totop {
-    font-size: 1rem;
-  }
-
-  .contact-logo {
-    font-size: 2.75rem;
-  }
-  
-  .contact-detail {
-    font-size: 1.4rem;
-  }
-
-  .notfound-link {
-    font-size: 1.3rem;
   }
 
 }
@@ -362,22 +305,6 @@ footer p {
 
   .container {
     width: 80%;
-  }
-
-  p {
-    font-size: 1.5rem;
-  }
-
-  h1 {
-    font-size: 2.8rem;
-  }
-
-  h2 {
-    font-size: 2.1rem;
-  }
-
-  a {
-    font-size: 0.9rem;
   }
 
   .button-learnmore {
@@ -399,41 +326,12 @@ footer p {
   }
 
   .layout-social-icon {
-    font-size: 1.8rem;
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  nav a {
-    font-size: 1.6rem;
-  }
-
-  footer p {
-    font-size: 0.9rem;
-  }
-
   .footer-nav {
     width: 80%;
-  }
-  
-  .footer-nav-link {
-    font-size: 0.8rem;
-  }
-
-  .footer-totop {
-    font-size: 1rem;
-  }
-
-  .contact-logo {
-    font-size: 2.5rem;
-  }
-  
-  .contact-detail {
-    font-size: 1.2rem;
-  }
-
-  .notfound-link {
-    font-size: 1.2rem;
   }
 
 }
@@ -443,22 +341,6 @@ footer p {
 
   .container {
     width: 90%;
-  }
-
-  p {
-    font-size: 1.3rem;
-  }
-
-  h1 {
-    font-size: 2.2rem;
-  }
-
-  h2 {
-    font-size: 1.65rem;
-  }
-
-  a {
-    font-size: 0.85rem;
   }
 
   .button-learnmore {
@@ -480,46 +362,17 @@ footer p {
   }
   
   .layout-social-icon {
-    font-size: 1.6rem;
     padding-left: 14px;
     padding-right: 14px;
-  }
-  
-  nav a {
-    font-size: 1.4rem;
-  }
-
-  footer p {
-    font-size: 0.8rem;
   }
 
   .footer-nav {
     width: 80%;
     grid-template-columns: 50% 50%;
   }
-  
-  .footer-nav-link {
-    font-size: 0.8rem;
-  }
-
-  .footer-totop {
-    font-size: 1rem;
-  }
 
   .contact h2 {
     margin-bottom: 5px;
-  }
-
-  .contact-logo {
-    font-size: 2.25rem;
-  }
-  
-  .contact-detail {
-    font-size: 1rem;
-  }
-
-  .notfound-link {
-    font-size: 1.1rem;
   }
 
 }
@@ -529,22 +382,6 @@ footer p {
 
   .container {
     width: 100%;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-  
-  h1 {
-    font-size: 1.6rem;
-  }
-
-  h2 {
-    font-size: 1.2rem;
-  }
-
-  a {
-    font-size: 0.8rem;
   }
 
   .button-learnmore {
@@ -566,46 +403,17 @@ footer p {
   }
   
   .layout-social-icon {
-    font-size: 1.4rem;
     padding-left: 12px;
     padding-right: 12px;
-  }
-  
-  nav a {
-    font-size: 1.2rem;
-  }
-
-  footer p {
-    font-size: 0.7rem;
   }
 
   .footer-nav {
     width: 80%;
     grid-template-columns: 50% 50%;
   }
-  
-  .footer-nav-link {
-    font-size: 0.7rem;
-  }
-
-  .footer-totop {
-    font-size: 0.9rem;
-  }
 
   .contact h2 {
     margin-bottom: 5px;
-  }
-
-  .contact-logo {
-    font-size: 2rem;
-  }
-  
-  .contact-detail {
-    font-size: 0.8rem;
-  }
-
-  .notfound-link {
-    font-size: 1rem;
   }
 
 }

@@ -12,7 +12,7 @@
   margin: auto;
   color: #333;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: clamp(0.8rem, 0.0588rem + 2.0588vw, 1.5rem);
   font-weight: bold;
 }
 
@@ -95,7 +95,7 @@
   width: 100%;
   height: 80px;
   color: white;
-  font-size: 1.2rem;
+  font-size: clamp(0.8rem, 0.3765rem + 1.1765vw, 1.2rem);
   text-decoration: none;
 }
 
@@ -104,7 +104,7 @@
 }
 
 .about-skills-list p {
-  font-size: 1.5rem;
+  font-size: clamp(0.8rem, 0.0588rem + 2.0588vw, 1.5rem);
   line-height: 200%;
 }
 
@@ -176,18 +176,6 @@
     width: 65%;
   }
 
-  .about-layout-nav a {
-    font-size: 1.4rem;
-  }
-
-  .about-skills-card a {
-    font-size: 1.1rem;
-  }
-
-  .about-skills-list p {
-    font-size: 1.35rem;
-  }
-
 }
 
 /* @media screen size - Medium */
@@ -195,18 +183,6 @@
 
   .about-layout-nav {
     width: 80%;
-  }
-  
-  .about-layout-nav a {
-    font-size: 1.25rem;
-  }
-
-  .about-skills-card a {
-    font-size: 1rem;
-  }
-
-  .about-skills-list p {
-    font-size: 1.125rem;
   }
 }
 
@@ -217,21 +193,12 @@
     width: 90%;
   }
 
-  .about-layout-nav a {
-    font-size: 1rem;
-  }
-
   .about-index-image {
     width: 40%;
   }
 
   .about-skills-card a {
     height: 70px;
-    font-size: 0.9rem;
-  }
-
-  .about-skills-list p {
-    font-size: 0.975rem;
   }
 }
 
@@ -240,10 +207,6 @@
   
   .about-layout-nav {
     width: 100%;
-  }
-
-  .about-layout-nav a {
-    font-size: 0.8rem;
   }
 
   .about-index-image {
@@ -256,11 +219,5 @@
 
   .about-skills-card a {
     height: 60px;
-    font-size: .8rem;
   }
-
-  .about-skills-list p {
-    font-size: 0.85rem;
-  }
-
 }

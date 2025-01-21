@@ -27,6 +27,7 @@
 }
 
 .portfolio-filters h2 {
+  font-size: clamp(1.6rem, 0.7529rem + 2.3529vw, 2.4rem);
   margin-bottom: 20px;
 }
 
@@ -39,7 +40,6 @@
   .portfolio-filters-clear a {
     color: #333;
     text-decoration: none;
-    font-size: 1rem;
     width: 90%;
     margin: auto;
     margin-top: 0;
@@ -47,6 +47,10 @@
     border: solid 2px white;
     background-color: darkcyan;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.7);
+  }
+
+  .portfolio-fitlers-clear a, .portfolio-filters-container a {
+    font-size: clamp(0.8rem, 0.5882rem + 0.5882vw, 1rem);
   }
 
 .portfolio-filters-container {
@@ -57,7 +61,6 @@
 .portfolio-filters-container a {
   color: #333;
   text-decoration: none;
-  font-size: 1rem;
   width: 80%;
   margin: auto;
   margin-bottom: 10px;
@@ -95,18 +98,18 @@
     padding-left: 0;
     padding-right: 0;
     border: none;
-    font-size: 3rem;
+    font-size: clamp(1.6rem, 0.1176rem + 4.1176vw, 3rem);
   }
 
   .portfolio-container h2 {
     border: none;
     color: darkcyan;
-    font-size: 1.4rem;
+    font-size: clamp(1rem, 0.5765rem + 1.1765vw, 1.4rem);
   }
 
   .portfolio-container h3 {
     margin: 10px;
-    font-size: 1rem;
+    font-size: clamp(0.75rem, 0.4853rem + 0.7353vw, 1rem);
   }
 
 .portfolio-container a {
@@ -170,7 +173,7 @@
     position: absolute;
     width: 92%;
     height: 91%;
-    font-size: 1.2rem;
+    font-size: clamp(0.8rem, 0.3765rem + 1.1765vw, 1.2rem);
     padding: 4%;
     border-radius: 5px;
     overflow-y: scroll;
@@ -212,13 +215,8 @@
   margin-bottom: 20px;
 }
 
-  .portfolio-details-subtitle p {
-    font-size: 1.4rem;
-    font-style: italic;
-  }
-
-  .portfolio-details-subtitle a {
-    font-size: 1.4rem;
+  .portfolio-details-subtitle p, .portfolio-details-subtitle a {
+    font-size: clamp(1rem, 0.5765rem + 1.1765vw, 1.4rem);
     font-style: italic;
   }
 
@@ -238,7 +236,7 @@
 
   .gallery-body button {
     border: none;
-    font-size: 3rem;
+    font-size: clamp(2.4rem, 1.7647rem + 1.7647vw, 3rem);
     background-color: rgba(0, 0, 0, 0);
     cursor: pointer;
   }
@@ -266,7 +264,7 @@
   bottom: 5px;
   left: 50%;
   transform: translate(-50%, 0%);
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 0.7882rem + 0.5882vw, 1.2rem);
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -282,7 +280,6 @@
   .portfolio-details-table th a {
     background-color: darkcyan;
     color: white;
-    font-size: 1.4rem;
     padding: 10px 40px;
     border-radius: 5px;
     border: solid 2px white;
@@ -299,13 +296,16 @@
     opacity:0.5;
   }
 
+  .portfolio-details-table th a, .portfolio-details-table tr {
+    font-size: clamp(0.75rem, 0.0618rem + 1.9118vw, 1.4rem);
+  }
+
   .portfolio-details-table tr {
-    font-size: 1.4rem;
     border: 1px solid #333;
   }
 
   .portfolio-details-table thead tr {
-      font-size: 2rem;
+      font-size: clamp(1rem, -0.0588rem + 2.9412vw, 2rem);
       background-color: rgba(0, 0, 0, 0.2);
       color: #333;
       font-weight: bold;
@@ -356,50 +356,14 @@
     grid-template-columns: 20% 80%;
   }
 
-    .portfolio-filters-clear a {
-      font-size: 0.9rem;
-    }
-
-    .portfolio-filters-container a {
-      font-size: 0.9rem;
-    }
-  
-    .portfolio-container h1 {
-      font-size: 2.2rem;
-    }
-
-    .portfolio-container h2 {
-      font-size: 1.4rem;
-    }
-
-    .portfolio-container h3 {
-      font-size: 0.9rem;
-    }
-
   .portfolio-card-title {
     height: 5.5rem;
   }
 
-    .portfolio-card-body p {
-      font-size: 0.9rem;
-    }
-
   /* --- Details --- */
-
-    .portfolio-details-subtitle p {
-      font-size: 1.3rem;
-    }
 
   .gallery-body {
     width: 60%;
-  }
-  
-    .gallery-body button {
-      font-size: 2.85rem;
-    }
-  
-  .gallery-position {
-    font-size: 1.15rem;
   }
 
   .portfolio-details-table {
@@ -407,16 +371,7 @@
   }
   
     .portfolio-details-table th a {
-      font-size: 1.3rem;
       padding: 8px 32px;
-    }
-  
-    .portfolio-details-table tr {
-      font-size: 1.3rem;
-    }
-  
-    .portfolio-details-table thead tr {
-        font-size: 1.75rem;
     }
   
     .portfolio-details-table th {
@@ -440,54 +395,18 @@
     grid-template-columns: 20% 80%;
   }
 
-    .portfolio-filters-clear a {
-      font-size: 0.85rem;
-    }
-
-    .portfolio-filters-container a {
-      font-size: 0.85rem;
-    }
-
   .portfolio-container {
     grid-template-columns: repeat(2, 50%);
   }
-
-    .portfolio-container h1 {
-      font-size: 2.2rem;
-    }
-
-    .portfolio-container h2 {
-      font-size: 1.4rem;
-    }
-
-    .portfolio-container h3 {
-      font-size: 0.9rem;
-    }
 
   .portfolio-card-title {
     height: 5.5rem;
   }
 
-    .portfolio-card-body p {
-      font-size: 0.9rem;
-    }
-
   /* --- Details --- */
-
-    .portfolio-details-subtitle p {
-      font-size: 1.2rem;
-    }
 
   .gallery-body {
     width: 70%;
-  }
-  
-    .gallery-body button {
-      font-size: 2.7rem;
-    }
-  
-  .gallery-position {
-    font-size: 1.1rem;
   }
 
   .portfolio-details-table {
@@ -495,16 +414,7 @@
   }
   
     .portfolio-details-table th a {
-      font-size: 1.1rem;
       padding: 6px 24px;
-    }
-  
-    .portfolio-details-table tr {
-      font-size: 1.1rem;
-    }
-  
-    .portfolio-details-table thead tr {
-        font-size: 1.5rem;
     }
   
     .portfolio-details-table tbody th {
@@ -531,29 +441,12 @@
     grid-template-columns: 25% 75%;
   }
 
-    .portfolio-filters-clear a {
-      font-size: 0.8rem;
-    }
-
-    .portfolio-filters-container a {
-      font-size: 0.8rem;
-    }
-
   .portfolio-container {
     grid-template-columns: repeat(2, 50%);
   }
 
-    .portfolio-container h1 {
-      font-size: 1.9rem;
-    }
-
-    .portfolio-container h2 {
-      font-size: 1.2rem;
-    }
-
     .portfolio-container h3 {
       margin: 5px;
-      font-size: 0.75rem;
     }
   
   .portfolio-card {
@@ -566,30 +459,14 @@
     height: 4.75rem;
   }
 
-    .portfolio-card-body p {
-      font-size: 0.8rem;
-    }
-
   /* --- Details --- */
 
   .portfolio-details-subtitle {
     margin-bottom: 10px;
   }
 
-    .portfolio-details-subtitle p {
-      font-size: 1.1rem;
-    }
-
   .gallery-body {
     width: 80%;
-  }
-  
-    .gallery-body button {
-      font-size: 2.55rem;
-    }
-  
-  .gallery-position {
-    font-size: 1.05rem;
   }
 
   .portfolio-details-table {
@@ -597,16 +474,7 @@
   }
   
     .portfolio-details-table th a {
-      font-size: 0.9rem;
       padding: 4px 16px;
-    }
-  
-    .portfolio-details-table tr {
-      font-size: 0.9rem;
-    }
-  
-    .portfolio-details-table thead tr {
-        font-size: 1.25rem;
     }
   
     .portfolio-details-table tbody th {
@@ -638,13 +506,9 @@
     margin-bottom: 40px;
   }
 
-  .portfolio-filters h2 {
-    font-size: 1.6rem;
+  .portfolio-filters-clear a {
+    width: 50%;
   }
-
-    .portfolio-filters-clear a {
-      width: 50%;
-    }
 
   .portfolio-filters-container {
     display: grid;
@@ -659,17 +523,8 @@
     grid-template-columns: repeat(2, 50%);
   }
 
-    .portfolio-container h1 {
-      font-size: 1.6rem;
-    }
-
-    .portfolio-container h2 {
-      font-size: 1rem;
-    }
-
     .portfolio-container h3 {
       margin: 5px;
-      font-size: 0.75rem;
     }
 
   .portfolio-card {
@@ -684,30 +539,14 @@
     height: 4rem;
   }
 
-    .portfolio-card-body p {
-      font-size: 0.8rem;
-    }
-
   /* --- Details --- */
 
   .portfolio-details-subtitle {
     margin-bottom: 10px;
   }
 
-    .portfolio-details-subtitle p {
-      font-size: 1rem;
-    }
-
   .gallery-body {
     width: 90%;
-  }
-  
-    .gallery-body button {
-      font-size: 2.4rem;
-    }
-  
-  .gallery-position {
-    font-size: 1rem;
   }
 
   .portfolio-details-table {
@@ -715,16 +554,7 @@
   }
   
     .portfolio-details-table th a {
-      font-size: 0.75rem;
       padding: 4px 16px;
-    }
-  
-    .portfolio-details-table tr {
-      font-size: 0.75rem;
-    }
-  
-    .portfolio-details-table thead tr {
-        font-size: 1rem;
     }
   
     .portfolio-details-table tbody th {
