@@ -150,55 +150,6 @@
   margin-bottom: 20px;
 }
 
-.about-skilldetails-chart {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.about-skilldetails-table {
-  margin: auto;
-  width: 90%;
-  border: 3px solid #333;
-  border-radius: 10px;
-  border-spacing: 0;
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-    .about-skilldetails-table tr {
-        font-family: Agency FB, Agency FB Thin, sans-serif;
-        font-size: 1.5rem;
-        border: 1px solid #333;
-    }
-
-        .about-skilldetails-table thead tr {
-            font-size: 2rem;
-            background-color: rgba(0, 0, 0, 0.2);
-            color: #333;
-        }
-
-    .about-skilldetails-table th {
-        padding: 10px;
-        border: 1px solid #333;
-        width: 12%;
-        text-align: center;
-    }
-
-    .about-skilldetails-table td {
-      padding: 10px;
-      border: 1px solid #333;
-      text-align: center;
-      font-weight: bold;
-    }
-
-      .about-skilldetails-table td a {
-        color: #333;
-        font-size: 1.5rem;
-      }
-
-    .about-skilldetails-table tr {
-      color: #333;
-    }
-
   .about-skilldetails-selected {
     background-color: rgba(0, 0, 0, 0.1);
   }
@@ -237,18 +188,6 @@
     font-size: 1.35rem;
   }
 
-  .about-skilldetails-table thead tr {
-    font-size: 1.8rem;
-  }
-
-  .about-skilldetails-table td a {
-    font-size: 1.75rem;
-  }
-
-  .about-skilldetails-table tr {
-    font-size: 1.75rem;
-  }
-
 }
 
 /* @media screen size - Medium */
@@ -269,19 +208,6 @@
   .about-skills-list p {
     font-size: 1.125rem;
   }
-
-  .about-skilldetails-table thead tr {
-    font-size: 1.6rem;
-  }
-
-  .about-skilldetails-table td a {
-    font-size: 1.5rem;
-  }
-
-  .about-skilldetails-table tr {
-    font-size: 1.5rem;
-  }
-
 }
 
 /* @media screen size - Small */
@@ -306,22 +232,6 @@
 
   .about-skills-list p {
     font-size: 0.975rem;
-  }
-
-  .about-skilldetails-table {
-    width: 100%;
-  }
-
-  .about-skilldetails-table thead tr {
-    font-size: 1.4rem;
-  }
-
-  .about-skilldetails-table td a {
-    font-size: 1.25rem;
-  }
-
-  .about-skilldetails-table tr {
-    font-size: 1.25rem;
   }
 }
 
@@ -351,22 +261,6 @@
 
   .about-skills-list p {
     font-size: 0.85rem;
-  }
-
-  .about-skilldetails-table {
-    width: 100%;
-  }
-
-  .about-skilldetails-table thead tr {
-    font-size: 1.2rem;
-  }
-
-  .about-skilldetails-table td a {
-    font-size: 1rem;
-  }
-
-  .about-skilldetails-table tr {
-    font-size: 1rem;
   }
 
 }

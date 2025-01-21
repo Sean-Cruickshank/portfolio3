@@ -69,29 +69,6 @@ export default function HardSkillsDetails() {
         <h1>{skillData.title}</h1>
         {skillDataParagraph}
       </div>
-
-      <div className='about-skilldetails-chart'>
-        <h2>Skill Chart</h2>
-        <p>I have ranked my confidence with each skill on a scale of 1 to 5</p>
-        <p>Hopefully this gives a good idea of how confident I feel with each skill!</p>
-      </div>
-
-      <table className='about-skilldetails-table'>
-        <thead>
-          <tr>
-            <td>Proficiency &rarr;</td>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-            <th>4</th>
-            <th>5</th>
-          </tr>   
-        </thead>
-        <tbody>
-          {tableElement}
-        </tbody>
-      </table>
-      
     </div>
   )
 }

@@ -217,6 +217,11 @@
     font-style: italic;
   }
 
+  .portfolio-details-subtitle a {
+    font-size: 1.4rem;
+    font-style: italic;
+  }
+
 .gallery {
   margin-bottom: 40px;
 }
