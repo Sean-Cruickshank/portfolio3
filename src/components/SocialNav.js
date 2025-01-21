@@ -42,7 +42,7 @@ export default function SocialNav() {
 
       <a
         className='layout-social-icon'
-        href='mailto:seancruickshank2023@gmail.com'
+        href='mailto:seancruickshank2025@gmail.com'
         target='_blank'
         title="Email"
       >

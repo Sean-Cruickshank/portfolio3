@@ -32,7 +32,7 @@ export default function PortfolioDetails() {
   }
 
   let list = "";
-  pageData.tagsFront.forEach((tag) => {
+  pageData.tags.forEach((tag) => {
     list = list + ", " + tag;
   })
   const formattedList = list.substring(1)
@@ -65,6 +65,12 @@ export default function PortfolioDetails() {
       <div className='portfolio-details-body'>
         <h1>{pageData.title}</h1>
         <div className='portfolio-details-subtitle'>
+          {pageData.link
+            ? <a
+                href={pageData.link}
+                target='_blank'
+              >{pageData.link}</a>
+            : null}
           <p>{pageData.yearLong}</p>
           <p>{formattedList}</p>
         </div>
@@ -84,8 +90,11 @@ export default function PortfolioDetails() {
         </div>
         
         }
-
-        { downloadsList.length > 0 &&
+        <div className='portfolio-details-text'>
+          <h2>Why I made this website</h2>
+          {pageData.pageText}
+        </div>
+        {/* { downloadsList.length > 0 &&
           <table className='portfolio-details-table'>
             <thead>
               <tr>
@@ -114,11 +123,7 @@ export default function PortfolioDetails() {
               }
             </tbody>
           </table>
-        }
-        <div className='portfolio-details-text'>
-          <h2>Why I made this website</h2>
-          {pageData.pageText}
-        </div>
+        } */}
       </div>
     </div>
   )

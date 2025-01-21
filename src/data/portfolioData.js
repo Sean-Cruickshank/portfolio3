@@ -1,5 +1,3 @@
-import CSF from '../images/thumbnails/csf_logo.jpg'
-import tenzies from '../images/thumbnails/tenzies.png'
 import { nanoid } from 'nanoid'
 
 export const portfolioData = [
@@ -10,17 +8,12 @@ export const portfolioData = [
     description: "A website about space, with different pages listing facts about various objects in space, ordered from smallest to largest.",
     yearShort: "2023 - 2024",
     yearLong: "December 2023 - January 2024",
-    tagsFront: [
+    tags: [
       "HTML",
       "CSS",
       "JavaScript"
     ],
-    tagsBack: [
-      "html",
-      "css",
-      "javascript"
-    ],
-    thumbnail: CSF,
+    thumbnail: '/images/thumbnails/csf.jpg',
     screenshotsFilesize: "24.3 MB",
     screenshotsDescription: "23 images of the website at different pages and resolutions",
     projectFilesize: "5.9 MB",
@@ -31,13 +24,13 @@ export const portfolioData = [
       <p key={nanoid()}>This website was also a good oppourtunity for me to learn more about content attribution and licencing. The website features an attributions page, where sources for all the images and facts used on the website can be found. All images were sourced through either public domain, or creative commons.</p>
     ],
     images: [
-      "https://d2ep14lbls2qwm.cloudfront.net/images/coolspacefacts/md_size.png",
-      "https://d2ep14lbls2qwm.cloudfront.net/images/coolspacefacts/md_distance.png",
-      "https://d2ep14lbls2qwm.cloudfront.net/images/coolspacefacts/md_temp.png",
-      "https://d2ep14lbls2qwm.cloudfront.net/images/coolspacefacts/md_speed.png",
-      "https://d2ep14lbls2qwm.cloudfront.net/images/coolspacefacts/xl_size_card.png",
-      "https://d2ep14lbls2qwm.cloudfront.net/images/coolspacefacts/xl_sources.png",
-      "https://d2ep14lbls2qwm.cloudfront.net/images/coolspacefacts/sm_speed.png"
+      "/images/coolspacefacts/md_size.png",
+      "/images/coolspacefacts/md_distance.png",
+      "/images/coolspacefacts/md_temp.png",
+      "/images/coolspacefacts/md_speed.png",
+      "/images/coolspacefacts/xl_size_card.png",
+      "/images/coolspacefacts/xl_sources.png",
+      "/images/coolspacefacts/sm_speed.png"
     ],
     imageTitles: [
       "A section about the International Space Station on the 'Size' page",
@@ -47,7 +40,8 @@ export const portfolioData = [
       "A section about the Milky Way Galaxy on the 'Size' page at XL screen resolution",
       "The sources page",
       "A section about the rotation of Jupiter on the 'Speed' page at mobile resolution"
-    ]
+    ],
+    link: 'https://coolspacefacts.com/'
   },
   {
     id: "2",
@@ -56,17 +50,12 @@ export const portfolioData = [
     description: "A recreation of the Tenzi dice game. Can track and update highscores.",
     yearShort: "2024",
     yearLong: "February 2024",
-    tagsFront: [
+    tags: [
       "HTML",
       "CSS",
       "React"
     ],
-    tagsBack: [
-      "html",
-      "css",
-      "react"
-    ],
-    thumbnail: tenzies,
+    thumbnail: '/images/thumbnails/tenzies.png',
     screenshotsFilesize: "129.4 KB",
     screenshotsDescription: "Contains the three screenshots shown above",
     projectFilesize: "591.2 KB",
@@ -76,64 +65,20 @@ export const portfolioData = [
       <p>The project built in the tutorial covered the gameplay of the game, but I have added a few extra touches to make it more interactive!</p>
     ],
     images: [
-      "https://d2ep14lbls2qwm.cloudfront.net/images/tenzies/newgame.png",
-      "https://d2ep14lbls2qwm.cloudfront.net/images/tenzies/midgame.png",
-      "https://d2ep14lbls2qwm.cloudfront.net/images/tenzies/victory.png",
+      "/images/tenzies/newgame.png",
+      "/images/tenzies/midgame.png",
+      "/images/tenzies/victory.png",
     ],
     imageTitles: [
       "A new game, with an existing high score already set",
       "Mid-game with 9 rolls made and 5 dice selected",
       "A victory celebration with all dice selected"
-    ]
-
+    ],
+    link: ''
   }
 ]
 
-export const filterData = [
-  {
-    front: "HTML",
-    back: "html"
-  },
-  {
-    front: "CSS",
-    back: "css"
-  },
-  {
-    front: "JavaScript",
-    back: "javascript"
-  },
-  {
-    front: "React",
-    back: "react"
-  }
-]
-
-/*
-  {
-    front: "Vue.js",
-    back: "vue"
-  },
-  {
-    front: "Wordpress",
-    back: "wordpress"
-  },
-  {
-    front: "C#",
-    back: "c-sharp"
-  },
-  {
-    front: "Java",
-    back: "java"
-  },
-  {
-    front: "SQL",
-    back: "sql"
-  },
-  {
-    front: "Jade",
-    back: "jade"
-  },
-*/
+export const filterData = ['HTML','CSS','JavaScript','React']
 
 /*
 
@@ -146,12 +91,7 @@ export const filterData = [
     description: "",
     yearShort: "",
     yearLong: "",
-    tagsFront: [
-      "",
-      "",
-      ""
-    ],
-    tagsBack: [
+    tags: [
       "",
       "",
       ""

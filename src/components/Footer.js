@@ -35,7 +35,7 @@ export default function Footer() {
         >Contact</Link>
       </div>
 
-      <p>Website created by Sean Cruickshank © 2024</p>
+      <p>Website created by Sean Cruickshank © 2025</p>
       
       <a onClick={toTop} className='footer-totop'>Back to top</a>
       

@@ -21,12 +21,6 @@ export default function HardSkills() {
   return (
     <div className='about-skills container'>
       <h1>Technical Skills</h1>
-      <Link
-        className='button-linktext'
-        onClick={toTop}
-        to='..'>
-          Learn More
-      </Link>
       <div className='about-skills-intro'>
         <p>I have compiled a list of all the skills I have worked with enough to feel confident using. Some of these are further along than others, but I would be happy to work with any of them.</p>
         <p>Each skills has it's own seperate page where you can learn more about my experience and what I have planned for the future!</p>

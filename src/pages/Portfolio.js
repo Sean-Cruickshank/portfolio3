@@ -39,13 +39,19 @@ export default function Portfolio() {
     splitFilter.forEach((filter) => {
       if (searchResults) {
         searchResults = searchResults.filter((item) => {
-          if (item.tagsBack.find(el => el.toLowerCase() === filter.toLowerCase())) {
+          item.tags.map((tag) => {
+            tag.toLowerCase()
+          })
+          if (item.tags.find(el => el.toLowerCase() === filter.toLowerCase())) {
             return true
           }
         })
       } else {
         searchResults = portfolioData.filter((item) => {
-          if (item.tagsBack.find(el => el.toLowerCase() === filter.toLowerCase())) {
+          item.tags.map((tag) => {
+            tag.toLowerCase()
+          })
+          if (item.tags.find(el => el.toLowerCase() === filter.toLowerCase())) {
             return true
           }
         })
@@ -72,7 +78,7 @@ export default function Portfolio() {
   //Generates the cards for each object in portfolioData
   const portfolioElement = searchResults.map((item) => {
     let list = "";
-    item.tagsFront.forEach((tag) => {
+    item.tags.forEach((tag) => {
       list = list + ", " + tag;
     })
     const formattedList = list.substring(1)
@@ -106,10 +112,10 @@ export default function Portfolio() {
   const filterElement = filterData.map((item) => {
     return (
       <Link
-        to={genNewSearchParamString("tag", `${item.back}`)}
-        className={splitFilter.includes(`${item.back}`) ? "filter-selected" : ""}
+        to={genNewSearchParamString("tag", `${item.toLowerCase()}`)}
+        className={splitFilter.includes(`${item.toLowerCase()}`) ? "filter-selected" : ""}
         key={nanoid()}
-          >{item.front}
+          >{item}
       </Link>
     )
     

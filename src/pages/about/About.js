@@ -1,4 +1,3 @@
-import portrait from '../../images/portrait.png'
 import { Link } from 'react-router-dom'
 import toTop from '../../utilities/toTop'
 
@@ -11,14 +10,14 @@ export default function About() {
       <div>
         <img
           className='about-index-image'
-          src={portrait}
+          src='/images/portrait.png'
           alt='A picture of me'
           title='A picture of me'
           />
       </div>
       <div className="about-index-section about-index-intro">
         <div className='button-learnmore'>
-          <a className='button-linktext' href="https://d2ep14lbls2qwm.cloudfront.net/downloads/SeanCV.docx">Download My CV</a>
+          <a className='button-linktext' href="/SeanCV2025.docx">Download My CV</a>
         </div>
         
           
