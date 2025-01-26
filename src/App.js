@@ -8,6 +8,7 @@ import Skills from './pages/about/Skills'
 import SkillsDetails from './pages/about/SkillsDetails'
 import Portfolio from './pages/Portfolio'
 import PortfolioDetails from './pages/PortfolioDetails'
+import TileGame from './pages/tilegame/TileGame'
 import Contact from './pages/Contact'
 import NotFound from './components/NotFound'
 
@@ -27,6 +28,7 @@ export default function App() {
 
           <Route path='portfolio' element={<Portfolio />} />
           <Route path='portfolio/:id' element={<PortfolioDetails />} />
+          <Route path='portfolio/tilegame' element={<TileGame />} />
           <Route path='contact' element={<Contact />} />
           <Route path='*' element={<NotFound />} />
         </Route>

@@ -1,0 +1,192 @@
+.tilegame {
+  display: grid;
+  background-color: rgb(30, 30, 30);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1rem;
+  line-height: 1.1;
+  color: white;
+}
+
+.tg-button {
+  background-color: rgb(90, 90, 90);
+  border: 2px solid white;
+  border-radius: 5px;
+  box-shadow: 3px 5px 5px rgba(30, 30, 30, 0.5);
+  cursor: pointer;
+  padding: 4px 10px;
+  width: 80%;
+  color: white;
+}
+
+.tg-button:hover {
+  box-shadow: inset 3px 5px 5px rgba(30, 30, 30, 0.2);
+  background-color: rgb(120, 120, 120);
+}
+
+.main {
+  background-color: red;
+}
+
+.grid {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.title {
+  background-color: black;
+  margin-inline: auto;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(12, min(50px, 8.33%));
+  gap: 0px;
+  width: min(75%, 600px);
+}
+
+.plate {
+  aspect-ratio: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.player-icon {
+  background-image: url(/public/images/tilegame/player-blue.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.player-icon-blue {
+  background-image: url(/public/images/tilegame/player-blue.png);
+}
+
+.player-icon-red {
+  background-image: url(/public/images/tilegame/player-red.png);
+}
+
+.player-icon-yellow {
+  background-image: url(/public/images/tilegame/player-yellow.png);
+}
+
+.player-icon-green {
+  background-image: url(/public/images/tilegame/player-green.png);
+}
+
+.player-icon-teal {
+  background-image: url(/public/images/tilegame/player-teal.png);
+}
+
+.player-icon-purple {
+  background-image: url(/public/images/tilegame/player-purple.png);
+}
+
+.player-icon-orange {
+  background-image: url(/public/images/tilegame/player-orange.png);
+}
+
+.key {
+  background-image: url(/public/images/tilegame/key.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.floor-one {
+  background-image: url(/public/images/tilegame/grass.png);
+  background-attachment: fixed;
+}
+
+.wall-one {
+  background: radial-gradient(green, rgb(0, 77, 0))
+}
+
+.floor-two {
+  background-image: url(/public/images/tilegame/dirt.png);
+  background-attachment: fixed;
+}
+
+.wall-two {
+  background: radial-gradient(rgb(90,90,120), rgb(120,120,150))
+}
+
+.floor-three {
+  background-image: url(/public/images/tilegame/ice.png);
+  background-attachment: fixed;
+}
+
+.wall-three {
+  background: radial-gradient(rgb(140, 140, 220), rgb(100, 100, 180));
+}
+
+.floor-four {
+  background-image: url(/public/images/tilegame/rock.png);
+  background-attachment: fixed;
+}
+
+.wall-four {
+  background: radial-gradient(rgb(255, 106, 0), rgb(255, 38, 0));
+}
+
+.control-panel {
+  position: relative;
+  width: min(25%, 200px);
+  padding: 5px 10px;
+  background-color: black;
+  text-align: center;
+  font-size: clamp(0.5rem, 0.7rem + 1.5vw, 1.5rem);
+}
+
+.start-game-button, .stop-game-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  font-size: clamp(0.5rem, 0.5rem + 2vw, 2rem);
+}
+
+.hidden {
+  display: none;
+}
+
+.timer {
+  position: absolute;
+  bottom: 7%;
+  left: 0;
+  transform: translate(0%, -50%);
+  width: 100%;
+  font-size: clamp(0.5rem, 0.5rem + 2vw, 2rem);
+}
+
+.tip {
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  transform: translate(0%, -50%);
+  font-size: clamp(0.5rem, 0.5rem + 1vw, 1rem);
+}
+
+.colour-select {
+  margin-top: 10px;
+  background-color: rgb(90, 90, 90);
+  border: 2px solid white;
+  border-radius: 5px;
+  box-shadow: 3px 5px 5px rgba(30, 30, 30, 0.5);
+  cursor: pointer;
+  padding: 4px 5px;
+  width: 60%;
+  color: white;
+  text-align: center;
+}
+
+.end-message {
+  background-color: #333;
+  position: absolute;
+  width: 50%;
+  transform: translate();
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

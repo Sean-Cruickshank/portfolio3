@@ -1,8 +1,10 @@
 import { nanoid } from 'nanoid'
 
+export const filterData = ['HTML','CSS','JavaScript','React']
+
 export const portfolioData = [
   {
-    id: "1",
+    id: "coolspacefacts",
     title: "Cool Space Facts",
     downloadLink: 'coolspacefacts',
     description: "A website about space, with different pages listing facts about various objects in space, ordered from smallest to largest.",
@@ -44,7 +46,7 @@ export const portfolioData = [
     link: 'https://coolspacefacts.com/'
   },
   {
-    id: "2",
+    id: "tenzies",
     title: "Tenzies",
     downloadLink: "tenzies",
     description: "A recreation of the Tenzi dice game. Can track and update highscores.",
@@ -75,10 +77,41 @@ export const portfolioData = [
       "A victory celebration with all dice selected"
     ],
     link: ''
+  },
+  {
+    id: "tilegame",
+    title: "Tile Game",
+    downloadLink: "",
+    description: "A small, tile based game created in under 24 hours",
+    yearShort: "2024",
+    yearLong: "December 2024",
+    tags: [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    thumbnail: '/images/thumbnails/tenzies.png',
+    screenshotsFilesize: "",
+    screenshotDescription: "",
+    projectFilesize: "",
+    projectDescription: "",
+    pageText: [
+      <p key={nanoid()}></p>,
+      <p key={nanoid()}></p>,
+      <p key={nanoid()}></p>
+    ],
+    images: [
+      "",
+      "",
+      "",
+    ],
+    imageTitles: [
+      "",
+      "",
+      "",
+    ]
   }
 ]
-
-export const filterData = ['HTML','CSS','JavaScript','React']
 
 /*
 

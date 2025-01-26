@@ -75,6 +75,8 @@ export default function PortfolioDetails() {
           <p>{formattedList}</p>
         </div>
 
+        {params.id === 'tilegame' && <p>hi</p>}
+
         {pageData.images &&
         <div className='gallery'>
           <div className='gallery-body'>
