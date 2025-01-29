@@ -98,10 +98,11 @@ export const portfolioData = [
     projectFilesize: "",
     projectDescription: "",
     pageText: [
-      <p key={nanoid()}>This game was created (mostly) in under 24 hours  as a challenge to see how far I could build a game in a limited time</p>,
-      <p key={nanoid()}>It started out as a way to experiment with grids in CSS, and I just kept thinking of new things to add</p>,
-      <p key={nanoid()}>The game was originally created as a single JavaScript file, but was eventually remade in React so I could post it on here</p>,
-      <p key={nanoid()}>Fun fact: Converting the game into a React app took significantly longer that creating the game itself!</p>
+      <p key={nanoid()}>This game was created (mostly) in under 24 hours  as a challenge to see how far I could build a game in a limited time. It started out as a way to experiment with grids in CSS, and I just kept thinking of new things to add.</p>,
+      <p key={nanoid()}>The purpose of the game is to collect as many keys as you can within 30 seconds. The grid is randomly generated and will change everytime a key is collected!</p>,
+      <p key={nanoid()}>The background and walls change based on how many points you have collected. You can also unlock new player icons by reaching the higher levels!</p>,
+      <p key={nanoid()}>The game was originally created as a single JavaScript file, but was eventually remade in React so I could post it on here. Fun fact: Converting the game into a React app took significantly longer that creating the game itself!</p>
+      
     ],
     images: [
       "/images/tilegame/level_one.png",
@@ -113,10 +114,10 @@ export const portfolioData = [
     ],
     imageTitles: [
       "The first level",
-      "The second level",
-      "The third level",
-      "The fourth level",
-      "The fifth level",
+      "The second level, unlocked at 5 points",
+      "The third level, unlocked at 10 points",
+      "The fourth level, unlocked at 15 points",
+      "The final level, unlocked at 20 points",
       "The 'game over' screen"
     ]
   }
