@@ -188,8 +188,11 @@
 
 /* --- Details --- */
 
-.portfolio-details {
+.portfolio-back {
   text-align: left;
+}
+
+.portfolio-details {
   margin-top: 0;
 }
 

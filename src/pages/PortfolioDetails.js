@@ -61,7 +61,15 @@ export default function PortfolioDetails() {
   
   return (
     <div className="portfolio-details container">
-      <Link onClick={toTop} to={`/portfolio${returnSearchParam}`}><FaArrowLeft /> Back to My Projects</Link>
+      <div className='portfolio-back'>
+        <Link
+          onClick={toTop}
+          to={`/portfolio${returnSearchParam}`}
+        >
+          <FaArrowLeft /> Back to My Projects
+        </Link>
+      </div>
+
       <div className='portfolio-details-body'>
         <h1>{pageData.title}</h1>
         <div className='portfolio-details-subtitle'>

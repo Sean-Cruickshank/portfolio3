@@ -13,7 +13,8 @@ export const portfolioData = [
     tags: [
       "HTML",
       "CSS",
-      "JavaScript"
+      "JavaScript",
+      "React"
     ],
     thumbnail: '/images/thumbnails/csf.jpg',
     screenshotsFilesize: "24.3 MB",
@@ -82,33 +83,41 @@ export const portfolioData = [
     id: "tilegame",
     title: "Tile Game",
     downloadLink: "",
-    description: "A small, tile based game created in under 24 hours",
+    description: "A small, tile based game created in JavaScript in under 24 hours. Collect keys to get as many points as you can in under 30 seconds",
     yearShort: "2024",
     yearLong: "December 2024",
     tags: [
       "HTML",
       "CSS",
-      "JavaScript"
+      "JavaScript",
+      "React"
     ],
-    thumbnail: '/images/thumbnails/tenzies.png',
+    thumbnail: '/images/thumbnails/tilegame.png',
     screenshotsFilesize: "",
     screenshotDescription: "",
     projectFilesize: "",
     projectDescription: "",
     pageText: [
-      <p key={nanoid()}></p>,
-      <p key={nanoid()}></p>,
-      <p key={nanoid()}></p>
+      <p key={nanoid()}>This game was created (mostly) in under 24 hours  as a challenge to see how far I could build a game in a limited time</p>,
+      <p key={nanoid()}>It started out as a way to experiment with grids in CSS, and I just kept thinking of new things to add</p>,
+      <p key={nanoid()}>The game was originally created as a single JavaScript file, but was eventually remade in React so I could post it on here</p>,
+      <p key={nanoid()}>Fun fact: Converting the game into a React app took significantly longer that creating the game itself!</p>
     ],
     images: [
-      "",
-      "",
-      "",
+      "/images/tilegame/level_one.png",
+      "/images/tilegame/level_two.png",
+      "/images/tilegame/level_three.png",
+      "/images/tilegame/level_four.png",
+      "/images/tilegame/level_five.png",
+      "/images/tilegame/game_over.png",
     ],
     imageTitles: [
-      "",
-      "",
-      "",
+      "The first level",
+      "The second level",
+      "The third level",
+      "The fourth level",
+      "The fifth level",
+      "The 'game over' screen"
     ]
   }
 ]

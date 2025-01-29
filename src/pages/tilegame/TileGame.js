@@ -1,4 +1,9 @@
 import React from "react";
+import { Link, useLocation, useParams } from "react-router-dom";
+import toTop from "../../utilities/toTop";
+import { FaArrowLeft } from "react-icons/fa";
+import { portfolioData } from "../../data/portfolioData";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 export default function TileGame() {
   
@@ -285,42 +290,111 @@ export default function TileGame() {
 
   function closeEndMessage() {
     endMessageElement.classList.add('hidden')
-    // score = 0
   }
+
+  const location = useLocation();
+  let returnSearchParam = "";
+  
+  if (location.state) {
+    returnSearchParam = location.state.search
+  }
+
+  const idData = portfolioData.filter(item => item.id === 'tilegame')
+  const pageData = idData[0];
+
+  const [position, setPosition] = React.useState(0)
+
+  function galleryIncrease() {
+    if (position < pageData.images.length - 1) {
+      setPosition(prev => prev + 1)
+    } else {
+      setPosition(0)
+    }
+  }
+  function galleryDecrease() {
+    if (position > 0) {
+      setPosition(prev => prev - 1)
+    } else {
+      setPosition(pageData.images.length - 1)
+    }
+  }
+
+  let list = "";
+  pageData.tags.forEach((tag) => {
+    list = list + ", " + tag;
+  })
+  const formattedList = list.substring(1)
   
   return (
-    <div className='tilegame'>
-      <div className="grid">
-        <div className="js-game game">
-          {gameElementHTML}
+    <div className="portfolio-details container">
+      <div className="portfolio-back">
+      <Link
+        onClick={toTop}
+        to={`/portfolio${returnSearchParam}`}
+      >
+        <FaArrowLeft /> Back to My Projects
+      </Link>
+      </div>
+      
+      <div className="portfolio-details-body">
+        <h1>Tile Game</h1>
+          <div className='portfolio-details-subtitle'>
+            <p>{pageData.yearLong}</p>
+            <p>{formattedList}</p>
+          </div>
+      </div>
+
+      <div className='tilegame'>
+        <div className="grid">
+          <div className="js-game game">
+            {gameElementHTML}
+          </div>
+          <div className="control-panel">
+            <button className="tg-button reset-score-button" onClick={resetHighScore}>Reset Highscore</button>
+            <select className="colour-select js-colour-select" name="colour" id="colour-select">
+              <option value="blue">Blue</option>
+              <option value="red">Red</option>
+              <option value="yellow">Yellow</option>
+              <option value="green">Green</option>
+              {highScore >= 10
+                ? <option value="teal">Teal</option>
+                : <option disabled value="teal">Teal (required score: 10)</option>}
+              {highScore >= 15
+                ? <option value="orange">Orange</option>
+                : <option disabled value="orange">Orange (required score: 15)</option>}
+              {highScore >= 20
+                ? <option value="purple">Purple</option>
+                : <option disabled value="purple">Purple (required score: 20)</option>}
+              
+            </select>
+            {scoreElement}
+            {highScoreElement}
+            <p className="js-tip tip hidden">Reset the board at any time by hitting the 'Enter' key!</p>
+            <p className="js-timer timer">30.0</p>
+            <button className="tg-button js-start-game-button start-game-button" onClick={handleClick}>Start</button>
+          </div>
         </div>
-        <div className="control-panel">
-          <button className="tg-button reset-score-button" onClick={resetHighScore}>Reset Highscore</button>
-          <select className="colour-select js-colour-select" name="colour" id="colour-select">
-            <option value="blue">Blue</option>
-            <option value="red">Red</option>
-            <option value="yellow">Yellow</option>
-            <option value="green">Green</option>
-            {highScore >= 10
-              ? <option value="teal">Teal</option>
-              : <option disabled value="teal">Teal (required score: 10)</option>}
-            {highScore >= 15
-              ? <option value="orange">Orange</option>
-              : <option disabled value="orange">Orange (required score: 15)</option>}
-            {highScore >= 20
-              ? <option value="purple">Purple</option>
-              : <option disabled value="purple">Purple (required score: 20)</option>}
-            
-          </select>
-          {scoreElement}
-          {highScoreElement}
-          <p className="js-tip tip hidden">Reset the board at any time by hitting the 'Enter' key!</p>
-          <p className="js-timer timer">30.0</p>
-          <button className="tg-button js-start-game-button start-game-button" onClick={handleClick}>Start</button>
+        <div className="js-end-message end-message hidden">
+          {endMessageHTML}
         </div>
       </div>
-      <div className="js-end-message end-message hidden">
-        {endMessageHTML}
+
+      <div className='gallery'>
+        <div className='gallery-body'>
+          <button className='gallery-button-back' onClick={galleryDecrease}><IoIosArrowBack /></button>
+          <button className='gallery-button-forward' onClick={galleryIncrease}><IoIosArrowForward /></button>
+          <p className='gallery-position'>{position + 1} of {pageData.images.length}</p>
+          <img
+            src={pageData.images[position]}
+            title={pageData.imageTitles[position]}
+          />
+        </div>
+        <p><i>{pageData.imageTitles[position]}</i></p>
+      </div>
+
+      <div className='portfolio-details-text'>
+        <h2>Why I made this website</h2>
+        <p>{pageData.pageText}</p>
       </div>
     </div>
   )
