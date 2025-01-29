@@ -55,8 +55,10 @@ export default function TileGame() {
         return <div key={keyCount++}  className={`plate ${icon}-two`}></div>
       } else if (score >= 10 && score < 15) {
         return <div key={keyCount++}  className={`plate ${icon}-three`}></div>
-      } else {
+      } else if (score >= 15 && score < 20) {
         return <div key={keyCount++}  className={`plate ${icon}-four`}></div>
+      } else {
+        return <div key={keyCount++}  className={`plate ${icon}-five`}></div>
       }
     } else {
       return <div key={keyCount++}  className={`plate ${icon}`}></div>
@@ -82,6 +84,7 @@ export default function TileGame() {
       }
     }))
     renderScores()
+    generateEndMessage()
     if (playerPos.x === goalPos.x && playerPos.y === goalPos.y) {
       score++;
       if (score > highScore) {
@@ -91,15 +94,6 @@ export default function TileGame() {
       setValues()
       renderGrid()
     }
-  }
-
-  const [scoreElement, setScoreElement] = React.useState(<p className="js-score score">1</p>)
-
-  const [highScoreElement, setHighScoreElement] = React.useState(<p className="js-high-score high-score">0</p>)
-
-  function renderScores() {
-    setScoreElement(<p className="js-score score">{`Score: ${score}`}</p>);
-    setHighScoreElement(<p className="js-high-score high-score">{`High Score: ${highScore}`}</p>)
   }
 
   React.useEffect(() => {
@@ -152,11 +146,9 @@ export default function TileGame() {
       tipElement.classList.remove('hidden');
       setValues();
       renderGrid();
-
+      endMessageElement.classList.add('hidden')
     } else {
       tipElement.classList.add('hidden');
-      //alert(generateEndMessage())
-      score = 0
       setGameActive(false)
       timer = 300;
       gameButtonElement.innerHTML = 'Start'
@@ -180,8 +172,6 @@ export default function TileGame() {
             timerElement.innerHTML = `${(timer / 10).toFixed(1)}`
           } else {
             tipElement.classList.add('hidden');
-            //alert(generateEndMessage())
-            score = 0
             setGameActive(false)
             clearInterval(intervalRef.current)
             timer = 300;
@@ -196,24 +186,6 @@ export default function TileGame() {
   },[runInterval])
 
   /* *********************************************************** */
-
-  function generateEndMessage() {
-    let endMessage = '';
-    if (score === highScore) {
-      endMessage = 'Well done, that\'s an impressive score!'
-    } else if (highScore - score < 3) {
-      endMessage = 'So close! You almost made it!'
-    } else if (highScore - score >= 3) {
-      endMessage = 'Better luck next time!'
-    }
-    return <>
-        <p>Game over!</p>
-        <p>{endMessage}</p>
-        <p>Your score: {score}</p>
-        <p>High score: {highScore}</p>
-        <button onClick={() => {endMessageElement.classList.add('hidden')}}>Close</button>
-      </>
-  }
 
   function resetHighScore() {
     highScore = 0;
@@ -273,6 +245,49 @@ export default function TileGame() {
     return result
   }
 
+  const [scoreElement, setScoreElement] = React.useState(<p className="js-score score">1</p>)
+
+  const [highScoreElement, setHighScoreElement] = React.useState(<p className="js-high-score high-score">0</p>)
+
+  function renderScores() {
+    setScoreElement(<p className="js-score score">{`Score: ${score}`}</p>);
+    setHighScoreElement(<p className="js-high-score high-score">{`High Score: ${highScore}`}</p>)
+  }
+
+  const [endMessageHTML, setEndMessageHTML] = React.useState(<p>test</p>)
+
+  function generateEndMessage() {
+    let endMessage = '';
+    if (score === highScore) {
+      endMessage = 'Well done, that\'s an impressive score!'
+    } else if (highScore - score < 1) {
+      endMessage = 'So close! You almost made it!'
+    } else if (highScore - score >= 3) {
+      endMessage = 'Better luck next time!'
+    }
+    setEndMessageHTML(
+      <>
+        <h2>Game over!</h2>
+        <p className="end-message-message">{endMessage}</p>
+        <p
+          className="end-message-score"
+        >Your score: {score}</p>
+        <p
+          className="end-message-score"
+        >High score: {highScore}</p>
+        <button
+          className="tg-button"
+          onClick={closeEndMessage}
+        >Close</button>
+      </>
+    )
+  }
+
+  function closeEndMessage() {
+    endMessageElement.classList.add('hidden')
+    // score = 0
+  }
+  
   return (
     <div className='tilegame'>
       <div className="grid">
@@ -286,9 +301,16 @@ export default function TileGame() {
             <option value="red">Red</option>
             <option value="yellow">Yellow</option>
             <option value="green">Green</option>
-            <option value="teal">Teal</option>
-            <option value="purple">Purple</option>
-            <option value="orange">Orange</option>
+            {highScore >= 10
+              ? <option value="teal">Teal</option>
+              : <option disabled value="teal">Teal (required score: 10)</option>}
+            {highScore >= 15
+              ? <option value="orange">Orange</option>
+              : <option disabled value="orange">Orange (required score: 15)</option>}
+            {highScore >= 20
+              ? <option value="purple">Purple</option>
+              : <option disabled value="purple">Purple (required score: 20)</option>}
+            
           </select>
           {scoreElement}
           {highScoreElement}
@@ -298,7 +320,7 @@ export default function TileGame() {
         </div>
       </div>
       <div className="js-end-message end-message hidden">
-        {generateEndMessage()}
+        {endMessageHTML}
       </div>
     </div>
   )
