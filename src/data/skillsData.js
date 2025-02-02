@@ -8,6 +8,8 @@ export const skillsData = [
     description: [
       <p>Like a lot of people, I started web developement with HTML and CSS in notepad when I was in school, when it was just something to do for fun.</p>,
       <p>I feel I have a decent understanding of how these languages work and can usually get the visual style I want out of them. There are definitely still places I can improve, but overall I feel confident writing with HTML and CSS.</p>,
+      <h2>SASS / SCSS</h2>,
+      <p>I have yet to use SASS in a project, but would like that to change in the near future. I am a big fan of a lot of the features it adds and intend to utilise it a lot more in future projects</p>,
       <h2>Bootstrap</h2>,
       <p>I have used bootstrap in a lot of my projects, and most of the syntax feels natural at this point. It has taken an important role in helping me build dynamic websites!</p>
     ]
@@ -18,11 +20,21 @@ export const skillsData = [
     title: "JavaScript",
     description: [
       <p>My main goal since graduating has been to improve my knowledge of JavaScript as much as possible.</p>,
-      <p>I feel I still have a lot to learn, but I have a lot of fun with it and I'm excited to learn new concepts and become more familiar with different libraries and frameworks.</p>
+      <p>I feel I still have a lot to learn, but I have a lot of fun with it and I'm excited to learn new concepts and become more familiar with different libraries and frameworks.</p>,
+      <p>"Cool Space Facts" was the first full website I ever made, and was built entirely with vanilla JavaScript. I wanted to ensure I had a solid understanding of the language before moving on to other frameworks</p>
     ]
   },
   {
     id: 2,
+    url: "typescript",
+    title: "TypeScript",
+    description: [
+      <p>I am familiar with much of the syntax of TypeScript and wish to learn more about it in the future</p>,
+      <p>As of writing this I haven't used it in  a project yet but this will hopefully change in the near future!</p>
+    ]
+  },
+  {
+    id: 3,
     url: "react",
     title: "React",
     description: [
@@ -32,26 +44,7 @@ export const skillsData = [
     ]
   },
   {
-    id: 3,
-    url: "vue",
-    title: "Vue.js",
-    description: [
-      <p>I spent some time learning Vue in the final year of my degree. It was the first JavaScript library I worked with!</p>,
-      <p>I haven't used it much since then, but I thought it was a lot of fun, and would like to spend more time with it in the future.</p>
-    ]
-  },
-  {
     id: 4,
-    url: "wordpress",
-    title: "WordPress",
-    description: [
-      <p>The first live website I worked on was for a charity in Invercargill and was entirely built in Wordpress as part of the second year of my Bachelor's degree.</p>,
-      <p>I worked on the front and backend design of the website, which included working with plugins and themes.</p>,
-      <p>While I haven't used it much since then, I would like to become more familiar with building websites through Wordpress, and coding with PHP in general.</p>
-    ]
-  },
-  {
-    id: 5,
     url: "c-sharp",
     title: "C#",
     description: [
@@ -61,24 +54,15 @@ export const skillsData = [
     ]
   },
   {
-    id: 6,
-    url: "java",
-    title: "Java",
-    description: [
-      <p>I spent some time learning Java in the first year of my degree, and used it in Android Studio to create mobile apps.</p>,
-      <p>I am familiar with the basics, but haven't used it as much lately.</p>
-    ]
-  },
-  {
-    id: 7,
+    id: 5,
     url: "database-management",
     title: "Database Management",
     description: [
-      <h2>- SQL -</h2>,
+      <h2>SQL</h2>,
       <p>Most of the work in databases I have done has been with SQL.</p>,
       <p>I am familiar with the syntax, but most of my work has been on the front-end, or with local data files (like this website!)</p>,
       <p>I definitely feel I have room to improve with SQL and database design in general!</p>,
-      <h2>- Jade -</h2>,
+      <h2>Jade</h2>,
       <p>I spent a semester using Jade during the second year of my degree. While I don't see many picking it over SQL, I enjoyed using it and am familiar with how it works</p>
     ]
   }

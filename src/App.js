@@ -22,8 +22,9 @@ export default function App() {
           <Route path='about' element={<AboutLayout />}>
             <Route index element={<About />} />
             <Route path='experience' element={<Experience />} />
-            <Route path='skills' element={<Skills />} />
-            <Route path='skills/:id' element={<SkillsDetails />} />
+            <Route path='skills' element={<Skills />}>
+             <Route path=':id' element={<SkillsDetails />} />
+            </Route>
           </Route>
 
           <Route path='portfolio' element={<Portfolio />} />

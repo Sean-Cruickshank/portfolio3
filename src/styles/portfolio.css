@@ -188,10 +188,6 @@
 
 /* --- Details --- */
 
-.portfolio-back {
-  text-align: left;
-}
-
 .portfolio-details {
   margin-top: 0;
 }
@@ -218,10 +214,18 @@
   margin-bottom: 20px;
 }
 
-  .portfolio-details-subtitle p, .portfolio-details-subtitle a {
+  .portfolio-details-subtitle p {
     font-size: clamp(1rem, 0.5765rem + 1.1765vw, 1.4rem);
     font-style: italic;
   }
+
+.portfolio-details-link {
+  margin-bottom: 40px;
+}
+
+.portfolio-details-link p, .portfolio-details-link a {
+  font-size: clamp(1rem, 0.5765rem + 1.1765vw, 1.4rem);
+}
 
 .gallery {
   margin-bottom: 40px;

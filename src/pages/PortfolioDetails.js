@@ -61,7 +61,7 @@ export default function PortfolioDetails() {
   
   return (
     <div className="portfolio-details container">
-      <div className='portfolio-back'>
+      <div className='back-button'>
         <Link
           onClick={toTop}
           to={`/portfolio${returnSearchParam}`}
@@ -73,12 +73,6 @@ export default function PortfolioDetails() {
       <div className='portfolio-details-body'>
         <h1>{pageData.title}</h1>
         <div className='portfolio-details-subtitle'>
-          {pageData.link
-            ? <a
-                href={pageData.link}
-                target='_blank'
-              >{pageData.link}</a>
-            : null}
           <p>{pageData.yearLong}</p>
           <p>{formattedList}</p>
         </div>
@@ -100,6 +94,19 @@ export default function PortfolioDetails() {
         </div>
         
         }
+
+        {pageData.link
+          ? 
+          <div className='portfolio-details-link'>
+            <h2>The website is available to view here!</h2>
+            <a  
+              href={pageData.link}
+                target='_blank'
+              >{pageData.link}
+            </a>
+          </div>
+          : null}
+          
         <div className='portfolio-details-text'>
           <h2>Why I made this website</h2>
           {pageData.pageText}

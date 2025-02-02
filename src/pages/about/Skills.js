@@ -1,22 +1,21 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink, Outlet } from 'react-router-dom';
 import { skillsData } from '../../data/skillsData';
 
 export default function HardSkills() {
   
   const skillElement = skillsData.map((skill) => {
     return (
-      <div className='about-skills-card' key={skill.id}>
-        <Link onClick={toTop} className='button-linktext' to={skill.url}>
-          {skill.title}
-        </Link>
-      </div>
+      <NavLink
+        key={skill.id}
+        className={({isActive}) => isActive
+          ? 'about-skills-card test'
+          : 'about-skills-card'
+        }
+        to={skill.url}>
+        {skill.title}
+      </NavLink>
     )
   })
-
-  function toTop() {
-    document.documentElement.scrollTop = 0;
-    document.body.scrollTop = 0;
-  }
 
   return (
     <div className='about-skills container'>
@@ -31,8 +30,10 @@ export default function HardSkills() {
         {skillElement}
       </div>
 
+      <Outlet />
+
       <div className='about-skills-misc'>
-        <h2>Miscellaneous</h2>
+        <h1>Miscellaneous</h1>
         <p>A few extra things that couldn't fill out a page by themselves, but I thought were worth mentioning:</p>
         <div className='about-skills-list'>
           <p>Versioning with Git and GitHub</p>
