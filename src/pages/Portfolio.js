@@ -9,7 +9,6 @@ export default function Portfolio() {
 
   //Checks whether a value exists for a tag searchParam
   const tagExists = searchParams.get("tag")
-  console.log(tagExists)
 
   //Splits tag searchParam values up into individual strings
   const tagFilter = searchParams.toString()
