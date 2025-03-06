@@ -24,20 +24,16 @@ export default function HardSkillsDetails() {
 
   if (skillData.id === undefined) {
     return (
-      <div className='container about-skilldetails'>
-        <Link to='/about/skills'><FaArrowLeft /> Back to Skills</Link>
-
-        <div className='about-skilldetails-container'>
+      <div className='about-skilldetails-text'>
         <h1>Skill not found</h1>
-        <p>The skill you entered doesn't have an entry. Coming soon? Maybe?</p>
-      </div>
+        <p>The skill '<span>{params.id}</span>' doesn't have an entry. Coming soon? Maybe?</p>
       </div>
     )
   }
   
   return (
     <div className='about-skilldetails-text'>
-      <h1>{skillData.title}</h1>
+      <h2>{skillData.title}</h2>
       {skillDataParagraph}
     </div>
   )

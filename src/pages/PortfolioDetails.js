@@ -101,7 +101,7 @@ export default function PortfolioDetails() {
             <h2>The website is available to view here!</h2>
             <a  
               href={pageData.link}
-                target='_blank'
+              target='_blank'
               >{pageData.link}
             </a>
           </div>

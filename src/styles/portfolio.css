@@ -224,7 +224,7 @@
 }
 
 .portfolio-details-link p, .portfolio-details-link a {
-  font-size: clamp(1rem, 0.5765rem + 1.1765vw, 1.4rem);
+  font-size: clamp(1rem, -0.0588rem + 2.9412vw, 2rem);
 }
 
 .gallery {

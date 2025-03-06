@@ -18,7 +18,7 @@ export default function Home() {
 
         <div className='home-section'>
           <h1>A bit about me</h1>
-          <p>I am a 27 year old developer from New Zealand looking for web development jobs</p>
+          <p>I am a 28 year old developer from New Zealand looking for web development jobs</p>
           <p>I began to persue web development as a career in 2018 and gained my bachelor's degree in IT in 2021</p>
           <p>I'm excited to improve upon my current knowledge and to learn new skills in an ever-changing industry</p>
           

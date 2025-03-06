@@ -7,6 +7,7 @@ export default function HardSkills() {
     return (
       <NavLink
         key={skill.id}
+        onClick={scroll}
         className={({isActive}) => isActive
           ? 'about-skills-card test'
           : 'about-skills-card'
@@ -17,12 +18,18 @@ export default function HardSkills() {
     )
   })
 
+  function scroll() {
+    if (window.scrollY < 250) {
+      window.scrollTo({top: 675, behavior: 'smooth'})
+    }
+  }
+
   return (
     <div className='about-skills container'>
       <h1>Technical Skills</h1>
       <div className='about-skills-intro'>
         <p>I have compiled a list of all the skills I have worked with enough to feel confident using. Some of these are further along than others, but I would be happy to work with any of them.</p>
-        <p>Each skills has it's own seperate page where you can learn more about my experience and what I have planned for the future!</p>
+        <p>Each skills has it's own section where you can learn more about my experience and what I have planned for the future!</p>
         <p>I hope to expand this list as much as possible over the next few years!</p>
       </div>
       

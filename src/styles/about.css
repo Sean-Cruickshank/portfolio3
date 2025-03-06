@@ -131,31 +131,47 @@
   margin-bottom: 40px;
 }
 
-.about-skilldetails-text h1 {
-  margin-top: 20px;
-  margin-bottom: 20px;
+.about-skilldetails-text span {
+  font-style: italic;
 }
 
 .about-skilldetails-text h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: clamp(1.8rem, 0.5294rem + 3.5294vw, 3rem);
+  text-transform: uppercase;
+}
+
+.about-skilldetails-text h3 {
+  font-family: Agency FB, Agency FB Thin, sans-serif;
+  border-bottom: 2px solid darkcyan;
+  width: max-content;
   margin-top: 40px;
   margin-bottom: 10px;
+  margin-inline: auto;
+  font-size: clamp(1.5rem, 0.5471rem + 2.6471vw, 2.4rem);
+  text-transform: uppercase;
 }
 
 .about-skilldetails-text p {
   margin-bottom: 20px;
 }
 
-  .about-skilldetails-selected {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
+.about-skilldetails-text img {
+  width: 30%;
+}
 
-    .about-skilldetails-selected td a {
-      color: darkcyan;
-    }  
-  
-    .about-skilldetails-selected th {
-      color: darkcyan;
-    }
+.about-skilldetails-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+  .about-skilldetails-selected td a {
+    color: darkcyan;
+  }  
+
+  .about-skilldetails-selected th {
+    color: darkcyan;
+  }
 
 /* --------------------------------------------- */
 
